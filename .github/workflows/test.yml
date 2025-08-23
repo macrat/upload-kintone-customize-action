@@ -21,7 +21,7 @@ jobs:
           base-url: ${{ secrets.KINTONE_BASE_URL }}
           username: ${{ secrets.KINTONE_USERNAME }}
           password: ${{ secrets.KINTONE_PASSWORD }}
-          app-id: ${{ variables.KINTONE_APP_ID }}
+          app-id: ${{ vars.KINTONE_APP_ID }}
           desktop-js: |
             test-pc-1.js
             test-pc-2.js
