@@ -1,0 +1,31 @@
+name: Test
+on: [push, pull_request]
+
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v5
+      - name: Generate test files
+        run: |
+          echo "console.log('Hello, PC 1!');" > test-pc-1.js
+          echo "console.log('Hello, PC 2!');" > test-pc-2.js
+          echo "console.log('Hello, Mobile!');" > test-mobile.js
+          echo "html { color: red; }" > test-pc.css
+          echo "html { color: blue; }" > test-mobile.css
+      - uses: ./
+        with:
+          base-url: ${{ secrets.KINTONE_BASE_URL }}
+          username: ${{ secrets.KINTONE_USERNAME }}
+          password: ${{ secrets.KINTONE_PASSWORD }}
+          app-id: ${{ variables.KINTONE_APP_ID }}
+          desktop-js: |
+            test-pc-1.js
+            test-pc-2.js
+          mobile-js: |
+            test-mobile.js
+          desktop-css: test-pc.css
+          mobile-css: test-mobile.css
