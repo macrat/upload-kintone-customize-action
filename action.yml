@@ -1,0 +1,61 @@
+name: Upload kintone customize
+description: Upload kintone customize from GitHub Actions
+branding:
+  icon: upload
+  color: yellow
+runs:
+  using: 'node24'
+  main: 'dist/index.js'
+inputs:
+  base-url:
+    description: Base-url of your kintone (e.g. https://example.cybozu.com)
+    required: true
+    default: ''
+  app-id:
+    description: kintone App ID
+    required: true
+    default: ''
+  scope:
+    description: Scope to enable customize (ALL, ADMIN, or NONE)
+    required: false
+    default: 'ALL'
+  desktop-js:
+    description: Path to desktop JS files
+    required: false
+    default: ''
+  desktop-css:
+    description: Path to desktop CSS files
+    required: false
+    default: ''
+  mobile-js:
+    description: Path to mobile JS files
+    required: false
+    default: ''
+  mobile-css:
+    description: Path to mobile CSS files
+    required: false
+    default: ''
+  username:
+    description: Login username
+    required: true
+    default: ''
+  password:
+    description: "User's password"
+    required: true
+    default: ''
+  oauth-token:
+    description: OAuth token (if you want to use OAuth authentication)
+    required: false
+    default: ''
+  basic-auth-username:
+    description: Basic Auth username (if your kintone is protected by Basic Auth)
+    required: false
+    default: ''
+  basic-auth-password:
+    description: Basic Auth password (if your kintone is protected by Basic Auth)
+    required: false
+    default: ''
+  guest-space-id:
+    description: 'Guest space ID (if you want to upload to a guest space)'
+    required: false
+    default: ''

@@ -1,0 +1,31 @@
+{
+  "name": "kintone-upload-customize-action",
+  "version": "1.0.0",
+  "description": "Upload kintone customize from GitHub Actions",
+  "homepage": "https://github.com/macrat/kintone-upload-customize-action#readme",
+  "bugs": {
+    "url": "https://github.com/macrat/kintone-upload-customize-action/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macrat/kintone-upload-customize-action.git"
+  },
+  "license": "MIT",
+  "author": "",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "node build.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@kintone/customize-uploader": "^8.0.14"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "esbuild": "^0.25.9",
+    "typescript": "^5.9.2"
+  }
+}
