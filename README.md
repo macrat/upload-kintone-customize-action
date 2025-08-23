@@ -1,4 +1,4 @@
-# Upload kintone cutsomize action
+# Upload kintone customize action
 
 Upload kintone customize JS/CSS files from GitHub Actions.
 
