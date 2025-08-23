@@ -2,7 +2,7 @@
 
 A GitHub Action to upload [kintone](https://www.kintone.com/) customize JS/CSS files.
 
-GitHub Actionで[kintone](https://kintone.cybozu.co.jp/)のカスタマイズ用JS/CSSファイルをアップロードします。
+GitHub Actionで[kintone](https://kintone.cybozu.co.jp/)のカスタマイズ用JS/CSSファイルをアップロードするためのカスタムアクション。
 
 
 ## Basic usage
