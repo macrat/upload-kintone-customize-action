@@ -24,8 +24,8 @@
     "@kintone/customize-uploader": "^8.0.14"
   },
   "devDependencies": {
-    "@types/node": "^24.3.0",
-    "esbuild": "^0.25.9",
-    "typescript": "^5.9.2"
+    "@types/node": "^24.6.1",
+    "esbuild": "^0.25.10",
+    "typescript": "^5.9.3"
   }
 }
