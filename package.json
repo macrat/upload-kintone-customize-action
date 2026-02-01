@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
-    "@kintone/customize-uploader": "^9.0.0"
+    "@kintone/customize-uploader": "^9.0.2"
   },
   "devDependencies": {
     "@types/node": "^24.6.1",
